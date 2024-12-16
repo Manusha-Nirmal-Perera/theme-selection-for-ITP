@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.themes {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.theme {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.theme-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.services-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 45%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.cta-section {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.color-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.color-swatch {
+    text-align: center;
+    margin: 5px;
+}
+
+.swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.swatch-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Theme 1 Specific Styles */
+.theme-1 .hero-section {
+    background-color: #ADD8E6;
+}
+
+.theme-1 .cta-section {
+    background-color: #008080;
+}
+
+.theme-1 .cta-button {
+    background-color: #FFFFFF;
+    color: #008080;
+}
+
+/* Theme 2 Specific Styles */
+.theme-2 .hero-section {
+    background-color: #003366;
+}
+
+.theme-2 .cta-section {
+    background-color: #90EE90;
+}
+
+.theme-2 .cta-button {
+    background-color: #003366;
+    color: #FFFFFF;
+}
+
+/* Theme 3 Specific Styles */
+.theme-3 .hero-section {
+    background-color: #FF7F50;
+}
+
+.theme-3 .cta-section {
+    background-color: #333333;
+}
+
+.theme-3 .cta-button {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-card {
+        width: 90%;
+    }
+}
